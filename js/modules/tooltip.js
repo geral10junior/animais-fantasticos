@@ -1,7 +1,7 @@
 export default function initToolTip() {
   const tooltips = document.querySelectorAll("[data-tooltip]");
 
-  function onMouseOver(event) {
+  function onMouseOver() {
     const tooltipBox = criarTooltipBox(this);
 
     onMouseMove.tooltipBox = tooltipBox;
@@ -23,7 +23,7 @@ export default function initToolTip() {
   };
 
   const onMouseMove = {
-    handleEvent() {
+    handleEvent(event) {
       this.tooltipBox.style.top = event.pageY + 20 + "px";
       this.tooltipBox.style.left = event.pageX + 20 + "px";
     },
