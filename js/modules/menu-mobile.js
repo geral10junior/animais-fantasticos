@@ -1,17 +1,15 @@
-import outsideClick from "./outsideClick.js";
+import outsideClick from "./outsideclick.js";
 
 export default function initMenuMobile() {
   const menuButton = document.querySelector('[data-menu="button"]');
   const menuList = document.querySelector('[data-menu="list"]');
-  const eventos = ["click", "touchstart"];
+  const eventos = ["click"];
 
   if (menuButton) {
     function openMenu(event) {
       menuList.classList.add("ativo");
       menuButton.classList.add("ativo");
       outsideClick(menuList, eventos, () => {
-        console.log("teste");
-
         menuList.classList.remove("ativo");
         menuButton.classList.remove("ativo");
       });
