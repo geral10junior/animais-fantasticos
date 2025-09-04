@@ -1,0 +1,30 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production --entry ./js/script.js -o ./",
+    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geral10junior/animais-fantasticos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geral10junior/animais-fantasticos/issues"
+  },
+  "homepage": "https://github.com/geral10junior/animais-fantasticos#readme",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21"
+  }
+}
