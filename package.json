@@ -1,30 +1,21 @@
 {
-  "name": "animais-fantasticos",
+  "name": "animais-eslint",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production --entry ./js/script.js -o ./",
-    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/geral10junior/animais-fantasticos.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/geral10junior/animais-fantasticos/issues"
-  },
-  "homepage": "https://github.com/geral10junior/animais-fantasticos#readme",
-  "description": "",
   "devDependencies": {
-    "eslint": "^9.34.0",
-    "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1"
-  },
-  "dependencies": {
-    "jquery": "^3.7.1",
-    "lodash": "^4.17.21"
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "babel-loader": "^8.2.2",
+    "eslint": "^9.18.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }
