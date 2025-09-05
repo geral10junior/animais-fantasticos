@@ -9,11 +9,14 @@ import initFuncionamento from "./modules/funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 import initScrollAnimation from "./modules/scroll-animacao.js";
+import Accordion from "./modules/accordion.js";
 
 const scrollSuave = new ScrollToSection('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
-initAccordion();
+const accordion = new Accordion("[data-anime='accordion'] dt");
+accordion.init();
+
 initTabNav();
 initModal();
 initToolTip();
